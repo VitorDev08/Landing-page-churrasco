@@ -1,0 +1,461 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-family: helvetica;
+}
+
+.logo img{
+    width: 100px;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+}
+
+/* MENU */
+.list  {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: rgb(117, 9, 9);
+}
+
+/* BOTÃO HEADER */
+.btn1{
+    padding: 12px 40px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(252, 33, 33);
+    border-radius: 10px;
+    border: none;
+}
+
+.btn1:hover{
+    color: black;
+    transition: 2s;
+}
+
+/* ÍCONES */
+.fa-solid {
+   padding: 0;
+}
+
+/* MENU MOBILE */
+#btn{
+    display: none;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px){
+
+    .list{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 110px;
+        left: 0;
+        width: 100%;
+        gap: 25px;
+        padding: 20px 0;
+        background-color: #ffffff;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .list.active{
+        display: flex;
+    }
+
+    .item{
+        width: 100%;
+        text-align: center;
+    }
+
+    .item a{
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    #btn{
+        display: block;
+        font-size: 20px;
+    }
+
+    h1{
+        font-size: 32px;
+        padding: 30px;
+        line-height: 1.2;
+        text-align: center;
+        padding-left: 0; /* melhor ajuste */
+    }
+
+    .texto{
+        padding: 40px;
+        text-align: center;
+    }
+
+    /* CONTACT MOBILE */
+    .contact{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .container-contact{
+        min-height: auto;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .info-contact,
+    .loc-contact,
+    .redes-contact{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes-contact h3{
+        display: none;
+    }
+
+    .redes-contact button{
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .info-contact p,
+    .loc-contact p{
+        justify-content: center;
+    }
+}
+
+
+
+/* HERO */
+.inicio{
+    min-height: 70vh;
+    background: 
+        linear-gradient(to right, rgba(0,0,0,0.75) 50%, rgba(0,0,0,0.2)),
+        url("hurras.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+}
+
+/* TITULO */
+h1{
+    color: #ffffff;
+    font-size: 50px;
+    padding-left: 100px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+span{
+    color: rgb(252, 33, 33);
+}
+
+/* TEXTO */
+.texto{
+    padding-left: 80px;
+    color: white;
+    max-width: 500px;
+}
+
+/* INFO */
+.info p{
+    font-size: 14px;
+    margin: 6px 0;
+    opacity: 0.9;
+}
+
+/* BOTÃO RESERVA */
+.btn-reserva{
+    margin-top: 25px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgb(124, 9, 9), rgb(180, 30, 30));
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 2s ;
+}
+
+.btn-reserva:hover{
+    color: #9c9393;
+}
+
+/* PRATOS */
+.pratos-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+}
+
+.pratos-design{
+    width: 300px;
+    text-align: center;
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pratos-design:hover{
+    transform: translateY(-10px);
+}
+
+.pratos-design img{
+    width: auto;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* TITULO DO PRATO */
+.pratos-design h4{
+    margin: 10px 0 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* DESCRIÇÃO */
+.pratos-design h6{
+    font-size: 13px;
+    font-weight: normal;
+    color: #555;
+    margin: 5px 0 10px;
+    min-height: 45px;
+}
+
+/* ⭐ ESTRELAS */
+.stars{
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.stars::before{
+    content: "★★★★★";
+    color: #ffc107;
+    font-size: 14px;
+    letter-spacing: 2px;
+    display: block;
+}
+
+/* TITULOS */
+.prato-title h2{
+    text-align: center;
+    color: rgb(197, 43, 43);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.prato-title h3{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(19, 18, 18);
+}
+
+.pratos-design h5{
+    margin-top: auto;
+}
+
+/* BOTÃO PREÇO */
+h5{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 5px;
+    background-color: #e42727;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+h5 i{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+h5 span{
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+h5:hover{
+    background-color: #f10303;
+    transform: translateY(-3px);
+}
+
+/* CONTACT */
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-contact{
+    background-color: #1d1c1c;
+    min-height: 35vh;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container-contact h2{
+    text-align: center;
+    color: #d8d5d5;
+}
+
+.info-contact p{
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+.loc-contact p{
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+.contact h3 i{
+    margin-right: 8px;
+    color: #141414;
+}
+
+.info-contact p,
+.loc-contact p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.redes-contact button{
+    padding: 15px;
+    border-radius: 10px;
+    transition: 2s;
+    font-family: helvetica;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+}
+
+.redes-contact button:hover{
+    transform: translateY(-2px);
+}
+
+.facebook{
+    background-color: #1877F2;
+}
+
+.instagram{
+    background: linear-gradient(45deg, #5851DB, #C13584, #E1306C, #FD1D1D);
+}
+
+.whatsapp{
+    background-color: #25D366;
+}
+
+.redes-contact h3{
+    margin-left: 80px;
+}
+#cart-box{
+    border: solid #e42727 1px;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    color: #000000;
+    display: none;
+}
+#cart-box.active{
+ display: none;
+}
+html{
+   scroll-behavior: smooth;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgba(0,0,0,0.5);
+
+    position: fixed; /* garante o X funcionar bem */
+}
+.modal.active{
+    display: flex;
+
+}
+.pedido{
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    min-width: 300px;
+}
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="scripts.js" defer></script>
+    <title>Landing page</title>
+</head>
+<body>
+
+<header>
+<nav class="start">
+   <div class="logo">
+      <img src="ChatGPT Image Apr 24, 2026, 03_08_20 PM.png">
+   </div>
+
+   <ul id="menu" class="list">
+      <li class="item"><a href="#">INICIO</a></li>
+      <li class="item"><a href="#cardapio">CARDAPIO</a></li>
+      <li class="item"><a href="#contato">CONTATO</a></li>
+   </ul>
+   
+    <button class="btn1">Peça Aqui</button>
+   <button class="cart"> 
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span id="number">0</span>
+     <div id="cart-box"></div>
+   </button> 
+  
+
+
+   <button id="btn"><i class="fa-solid fa-bars"></i></button>
+</nav>
+</header>
+
+<main class="container">
+
+<div class="inicio">
+  <h1>
+    A MELHOR<br>
+    <span>QUALIDADE</span><br>
+    DA CIDADE
+  </h1>
+
+  <div class="texto">
+    <h2 class="edit">
+      Self-service<br>
+      Prato feito
+    </h2>
+
+    <div class="info">
+      <p>ABERTO TODOS OS DIAS</p>
+    </div>
+
+    <button class="btn-reserva">Ver reservas disponíveis</button>
+  </div>
+</div>
+
+<div class="pratos" id="cardapio">
+  <div class="prato-title">
+    <h2>CARDAPIO</h2>
+    <h3>Nossos pratos especiais</h3>
+  </div>
+
+  <div class="pratos-container">
+
+    <div class="pratos-design">
+      <img src="prato 5.png">
+      <h4>Fraldinha</h4>
+      <h6>Prato com farofa, couve, empada, linguiça e fraldinha</h6>
+      <div class="stars">( 42 +)</div>
+
+      <h5>
+        <i class="fa-solid fa-basket-shopping"></i>
+        <span class="price">40R$</span>
+      </h5>
+    </div>
+
+    <div class="pratos-design">
+      <img src="ult.png">
+      <h4>Linguiça toscana</h4>
+      <h6>Prato com purê, pão, batata frita e linguiça toscana</h6>
+      <div class="stars">( 26 +)</div>
+
+      <h5>
+        <i class="fa-solid fa-basket-shopping"></i>
+        <span class="price">30R$</span>
+      </h5>
+    </div>
+
+    <div class="pratos-design">
+      <img src="prato20.png">
+      <h4>Costela</h4>
+      <h6>Prato com polenta, couve, farofa e costela</h6>
+      <div class="stars">( 50 +)</div>
+
+      <h5>
+        <i class="fa-solid fa-basket-shopping"></i>
+        <span class="price">35R$</span>
+      </h5>
+    </div>
+
+    <div class="pratos-design">
+      <img src="freepik_br_ac2d3bf1-3eeb-4576-b035-ddc769b73e23.png">
+      <h4>Picanha</h4>
+      <h6>Prato com farofa, tropeiro, arroz, vinagrete e picanha</h6>
+      <div class="stars">( 33 +)</div>
+
+      <h5>
+        <i class="fa-solid fa-basket-shopping"></i>
+        <span class="price">45R$</span>
+      </h5>
+    </div>
+
+  </div>
+</div>
+ <div class="container-contact" id="contato">
+ <div class="title-contact">
+ 
+    <h2>ENTRE EM CONTATO COM A BRASA</h2>
+
+</div>
+<div class="contact">
+ 
+  <div class="info-contact">
+    <h3><i class="fa-solid fa-headset"></i>ATENDIMENTO</h3>
+    <p><i class="fa-solid fa-phone"></i> 65 9999-9999</p>
+    <p><i class="fa-solid fa-envelope"></i> brasa.@email.com</p>
+  </div>
+
+  <div class="loc-contact">
+    <h3><i class="fa-solid fa-map"></i>LOCALIZACAO</h3>
+     <p><i class="fa-solid fa-location-dot"></i> 157 Rua Cuiaba 1093 </p>
+     <p>11h-15h / 18h-00h</p>
+  </div>
+
+ <div class="redes-contact">
+   <h3><i class="fa-solid fa-share-nodes"></i>REDES SOCIAIS</h3>
+<button class="facebook"><i class="fa-brands fa-facebook-f"></i> FACEBOOK</button>
+<button class="instagram"><i class="fa-brands fa-instagram"></i> INSTAGRAM</button>
+<button class="whatsapp"><i class="fa-brands fa-whatsapp"> WHATSAPP</i>
+ 
+ </div>
+
+</div>
+</div>
+
+
+</main>
+<div class="modal">
+  <button class="close">X</button>
+  <h1>Faca seu pedido aqui</h1>
+
+  <div class="pedido"></div>
+</div>
+</div>
+
+</body>
+</html>
