@@ -12,7 +12,7 @@ body{
     border-radius: 50%;
 }
 
-/* NAV */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -20,7 +20,7 @@ nav {
     align-items: center;
 }
 
-/* MENU */
+
 .list  {
     list-style: none;
     display: flex;
@@ -40,7 +40,7 @@ a:hover {
     color: rgb(117, 9, 9);
 }
 
-/* BOTÃO HEADER */
+
 .btn1{
     padding: 12px 40px;
     font-weight: bold;
@@ -56,12 +56,12 @@ a:hover {
     transition: 2s;
 }
 
-/* ÍCONES */
+
 .fa-solid {
    padding: 0;
 }
 
-/* MENU MOBILE */
+
 #btn{
     display: none;
 }
@@ -72,7 +72,7 @@ button {
     cursor: pointer;
 }
 
-/* ================= MOBILE ================= */
+
 @media (max-width: 768px){
 
     .list{
@@ -114,7 +114,7 @@ button {
         padding: 30px;
         line-height: 1.2;
         text-align: center;
-        padding-left: 0; /* melhor ajuste */
+        padding-left: 0;
     }
 
     .texto{
@@ -122,7 +122,7 @@ button {
         text-align: center;
     }
 
-    /* CONTACT MOBILE */
+    
     .contact{
         flex-direction: column;
         align-items: center;
@@ -164,7 +164,7 @@ button {
 
 
 
-/* HERO */
+
 .inicio{
     min-height: 70vh;
     background: 
@@ -176,7 +176,7 @@ button {
     padding-top: 150px;
 }
 
-/* TITULO */
+
 h1{
     color: #ffffff;
     font-size: 50px;
@@ -189,21 +189,21 @@ span{
     color: rgb(252, 33, 33);
 }
 
-/* TEXTO */
+
 .texto{
     padding-left: 80px;
     color: white;
     max-width: 500px;
 }
 
-/* INFO */
+
 .info p{
     font-size: 14px;
     margin: 6px 0;
     opacity: 0.9;
 }
 
-/* BOTÃO RESERVA */
+
 .btn-reserva{
     margin-top: 25px;
     padding: 15px 25px;
@@ -220,7 +220,7 @@ span{
     color: #9c9393;
 }
 
-/* PRATOS */
+
 .pratos-container{
     display: flex;
     justify-content: center;
@@ -254,14 +254,14 @@ span{
     margin-bottom: 15px;
 }
 
-/* TITULO DO PRATO */
+
 .pratos-design h4{
     margin: 10px 0 5px;
     font-size: 18px;
     font-weight: bold;
 }
 
-/* DESCRIÇÃO */
+
 .pratos-design h6{
     font-size: 13px;
     font-weight: normal;
@@ -270,7 +270,7 @@ span{
     min-height: 45px;
 }
 
-/* ⭐ ESTRELAS */
+
 .stars{
     font-size: 12px;
     color: #777;
@@ -285,7 +285,7 @@ span{
     display: block;
 }
 
-/* TITULOS */
+
 .prato-title h2{
     text-align: center;
     color: rgb(197, 43, 43);
@@ -303,7 +303,7 @@ span{
     margin-top: auto;
 }
 
-/* BOTÃO PREÇO */
+
 h5{
     margin-top: 15px;
     display: flex;
@@ -333,7 +333,7 @@ h5:hover{
     transform: translateY(-3px);
 }
 
-/* CONTACT */
+
 .contact{
     display: flex;
     justify-content: space-between;
@@ -414,7 +414,7 @@ h5:hover{
     display: none;
 }
 #cart-box.active{
- display: none;
+ display: block;
 }
 html{
    scroll-behavior: smooth;
@@ -433,7 +433,7 @@ html{
 
     background-color: rgba(0,0,0,0.5);
 
-    position: fixed; /* garante o X funcionar bem */
+    position: fixed;
 }
 .modal.active{
     display: flex;
